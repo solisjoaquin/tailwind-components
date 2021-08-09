@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 10px;
+}
+
+h1,
+p {
+  font-family: Inter;
+}
+
+
+pre {
+  tab-size: 2; 
+  white-space: pre-wrap; 
+  overflow-x: auto;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  
+}
+
