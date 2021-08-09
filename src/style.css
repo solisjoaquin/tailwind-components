@@ -3,10 +3,16 @@
 body {
   max-width: 48rem;
   margin: 0 auto;
+  background-color: #f9fafb
 }
 
 .container {
   padding: 10px;
+}
+
+.children-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 h1,
@@ -24,5 +30,9 @@ pre {
   color: white;
   border-radius: 10px;
   
+}
+
+code {
+  font-family: courier, monospace;
 }
 

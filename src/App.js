@@ -3,29 +3,44 @@ import './style.css';
 import DisplayCode from './DisplayCode';
 
 export default function App() {
-  const TailwindFont = {
+  const cssJSON = {
     letterSpacing: '-.025em',
     fontWeight: 800,
     fontSize: '1.875rem',
     lineHeight: '2.25rem'
   };
 
-  const TailwindFont2 = {
-    color: 'red',
-    letterSpacing: '-.025em',
-    fontWeight: 800,
-    fontSize: '1.875rem',
-    lineHeight: '2.25rem'
+  const gradientText = {
+
+    background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)",
+  webkitBackgroundClip: "text",
+  webkitTextFillColor: "transparent"
+  }
+
+
+  const buttonStyle = {
+    backgroundColor: 'rgba(79,70,229)',
+    paddingLeft: '1.25rem',
+    paddingRight: '1.25rem',
+    paddingTop: '.75rem',
+    paddingBottom: '.75rem',
+    borderRadius: '.375rem',
+    fontFamily: 'Inter',
+    color: 'rgba(255,255,255)',
+    fontWeight: 500
   };
-
-  const textID =
-    '{"lineHeight":"2.25rem", "letterSpacing":"-.025em", "fontWeight":"800"}';
-
-  const mystyle = JSON.parse(textID);
   return (
     <div className="container">
-      <DisplayCode textID={TailwindFont}>
-        <h1 style={mystyle}>Tailwind without tailwind</h1>
+      <DisplayCode textID={cssJSON}>
+        <h1 style={cssJSON}>Tailwind without tailwind</h1>
+      </DisplayCode>
+
+      <DisplayCode textID={gradientText}>
+        <h1 style={gradientText}>Tailwind without tailwind</h1>
+      </DisplayCode>
+
+      <DisplayCode textID={buttonStyle}>
+        <a style={buttonStyle}>Get Started</a>
       </DisplayCode>
     </div>
   );
